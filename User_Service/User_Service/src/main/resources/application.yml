@@ -1,5 +1,17 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultZone:
-        ${EUREKA_URI:http://localhost:8761/eureka/}
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone:
+#        ${EUREKA_URI:http://localhost:8761/eureka/}
+
+
+server:
+  port: 8081
+
+spring:
+  application:
+    name: user-service
+
+jwt:
+  secret: MiAVzqUXy5Tfr1kVIGpP
+  expiration: 86400
